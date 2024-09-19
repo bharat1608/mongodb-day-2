@@ -1,0 +1,929 @@
+
+DESIGN DATABASE FOR ZEN CLASS PROGRAMME
+
+COLLECTIONS:-
+
+USERS:-
+
+db.users.find();
+
+{
+    _id: ObjectId('6651415710b1f37c727900fb'),
+    name: 'sowmiya',
+    age: 24,
+    email: 'sowmiya@gmail.com'
+  },
+  {
+    _id: ObjectId('6651415710b1f37c727900fc'),
+    name: 'saran',
+    age: 27,
+    email: 'saran@gmail.com'
+  },
+  {
+    _id: ObjectId('6651415710b1f37c727900fd'),
+    name: 'jaya',
+    age: 29,
+    email: 'jaya@gmail.com'
+  },
+  {
+    _id: ObjectId('6651415710b1f37c727900fe'),
+    name: 'varsha',
+    age: 25,
+    email: 'varsha@gmail.com'
+  },
+  {
+    _id: ObjectId('6651415710b1f37c727900ff'),
+    name: 'monika',
+    age: 21,
+    email: 'monika@gmail.com'
+  },
+  {
+    _id: ObjectId('66514b4b10b1f37c72790114'),
+    name: 'suba',
+    age: 25,
+    email: 'suba@gmail.com'
+  },
+  {
+    _id: ObjectId('66514b4b10b1f37c72790115'),
+    name: 'reshma',
+    age: 26,
+    email: 'reshma@gmail.com'
+  },
+  {
+    _id: ObjectId('66514b4b10b1f37c72790116'),
+    name: 'anja',
+    age: 32,
+    email: 'anja@gmail.com'
+  },
+  {
+    _id: ObjectId('66514b4b10b1f37c72790117'),
+    name: 'loganathan',
+    age: 35,
+    email: 'logu@gmail.com'
+  },
+  {
+    _id: ObjectId('66514b4b10b1f37c72790118'),
+    name: 'kalai',
+    age: 21,
+    email: 'kalai@gmail.com'
+  }
+--------------------------------------------------------------------------------------------------------
+CODEKATA:-
+
+db.codekata.find();
+
+ {
+    _id: ObjectId('66514c6610b1f37c72790119'),
+    problem_solved: 75,
+    users_id: ObjectId('6651415710b1f37c727900fb')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c7279011a'),
+    problem_solved: 35,
+    users_id: ObjectId('6651415710b1f37c727900fb')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c7279011b'),
+    problem_solved: 95,
+    users_id: ObjectId('6651415710b1f37c727900fd')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c7279011c'),
+    problem_solved: 55,
+    users_id: ObjectId('6651415710b1f37c727900fe')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c7279011d'),
+    problem_solved: 65,
+    users_id: ObjectId('6651415710b1f37c727900ff')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c7279011e'),
+    problem_solved: 43,
+    users_id: ObjectId('66514b4b10b1f37c72790114')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c7279011f'),
+    problem_solved: 75,
+    users_id: ObjectId('66514b4b10b1f37c72790115')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c72790120'),
+    problem_solved: 90,
+    users_id: ObjectId('66514b4b10b1f37c72790116')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c72790121'),
+    problem_solved: 62,
+    users_id: ObjectId('66514b4b10b1f37c72790117')
+  },
+  {
+    _id: ObjectId('66514c6610b1f37c72790122'),
+    problem_solved: 48,
+    users_id: ObjectId('66514b4b10b1f37c72790118')
+  }
+-----------------------------------------------------------------------------------------
+ATTENDANCE:-
+
+db.attendance.find();
+
+{ _id: ObjectId('6651bcb1d2cbd145dbfe6a2f'), attendance: 'present' },
+{ _id: ObjectId('6651bcb1d2cbd145dbfe6a30'), attendance: 'absent' }
+-----------------------------------------------------------------------------------------------
+TOPICS:-
+
+db.topics.find();
+
+{
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a81'),
+    topic: 'html',
+    month: 'october',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a31')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a82'),
+    topic: 'css',
+    month: 'october',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a3d')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a83'),
+    topic: 'bootstrap',
+    month: 'october',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a45')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a84'),
+    topic: 'js',
+    month: 'october',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a4f')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a85'),
+    topic: 'reactjs',
+    month: 'november',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a59')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a86'),
+    topic: 'nodejs',
+    month: 'november',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a6d')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a87'),
+    topic: 'mysql',
+    month: 'november',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a63')
+  },
+  {
+    _id: ObjectId('6651ceb0d2cbd145dbfe6a88'),
+    topic: 'mongodb',
+    month: 'december',
+    task_id: ObjectId('6651c430d2cbd145dbfe6a77')
+  }
+-----------------------------------------------------------
+TASKS:-
+
+
+db.task.find();
+
+ {
+    _id: ObjectId('6651c430d2cbd145dbfe6a31'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a32'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a33'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a34'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a35'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a36'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a37'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a38'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a39'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a3a'),
+    task: 'day3task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a3b'),
+    task: 'day2task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a3c'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a3d'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a3e'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a3f'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a40'),
+    task: 'day2task',
+    date: 2020-10-26T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a41'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a42'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a43'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a44'),
+    task: 'day2task',
+    date: 2020-10-16T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a45'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a46'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a47'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a48'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a49'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a4a'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a4b'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a4c'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a4d'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a4e'),
+    task: 'day1task',
+    date: 2020-10-14T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a4f'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a50'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a51'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a52'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a53'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a54'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a55'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a56'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a57'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a58'),
+    task: 'day4task',
+    date: 2020-10-29T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a59'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a5a'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a5b'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a5c'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a5d'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a5e'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a5f'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a60'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a61'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a62'),
+    task: 'day5task',
+    date: 2020-11-01T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a63'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a64'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a65'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a66'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a67'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a68'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a69'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a6a'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a6b'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a6c'),
+    task: 'day6task',
+    date: 2020-11-19T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a6d'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a6e'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a6f'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a70'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a71'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a72'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a73'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a74'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a75'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a76'),
+    task: 'day7task',
+    date: 2020-11-23T00:00:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a77'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fb'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a78'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('6651415710b1f37c727900fc'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a79'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fd'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a7a'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900fe'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a7b'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('6651415710b1f37c727900ff'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a7c'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790114'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a7d'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'not-submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790116'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a30')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a7e'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790115'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a7f'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790117'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  },
+  {
+    _id: ObjectId('6651c430d2cbd145dbfe6a80'),
+    task: 'day8task',
+    date: 2020-12-04T18:30:00.000Z,
+    status: 'submitted',
+    users_id: ObjectId('66514b4b10b1f37c72790118'),
+    attendance_id: ObjectId('6651bcb1d2cbd145dbfe6a2f')
+  }
+---------------------------------------------------------------------------------------------------
+COMPANY_DRIVES:-
+
+db.companydrives.find();
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f917'),
+    companyname: 'samsung',
+    date: 2020-10-16T00:00:00.000Z,
+    users_id: ObjectId('6651415710b1f37c727900fb')
+  },
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f918'),
+    companyname: 'google',
+    date: 2020-10-19T00:00:00.000Z,
+    users_id: ObjectId('6651415710b1f37c727900fc')
+  },
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f919'),
+    companyname: 'zoho',
+    date: 2020-10-23T00:00:00.000Z,
+    users_id: ObjectId('6651415710b1f37c727900fd')
+  },
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f91a'),
+    companyname: 'moto',
+    date: 2020-10-25T00:00:00.000Z,
+    users_id: ObjectId('6651415710b1f37c727900fe')
+  },
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f91b'),
+    companyname: 'tcs',
+    date: 2020-10-31T18:30:00.000Z,
+    users_id: ObjectId('6651415710b1f37c727900ff')
+  },
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f91c'),
+    companyname: 'infotech',
+    date: 2020-10-13T18:30:00.000Z,
+    users_id: ObjectId('66514b4b10b1f37c72790116')
+  },
+  {
+    _id: ObjectId('6651770a1a38cb28ac61f91d'),
+    companyname: 'infosy',
+    date: 2020-10-01T18:30:00.000Z,
+    users_id: ObjectId('66514b4b10b1f37c72790114')
+  }
+
+
+
+--------------------------------------------------------------------------------------------------------
+MENTORS:-
+
+db.mentors.find();
+
+  {
+    _id: ObjectId('66513f1010b1f37c727900f2'),
+    mentor_name: 'john',
+    mentees_count: 12
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f3'),
+    mentor_name: 'rupan',
+    mentees_count: 25
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f4'),
+    mentor_name: 'thiru',
+    mentees_count: 16
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f5'),
+    mentor_name: 'sowmiya',
+    mentees_count: 24
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f6'),
+    mentor_name: 'suresh',
+    mentees_count: 22
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f7'),
+    mentor_name: 'nayan',
+    mentees_count: 10
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f8'),
+    mentor_name: 'vignesh',
+    mentees_count: 15
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900f9'),
+    mentor_name: 'joe',
+    mentees_count: 13
+  },
+  {
+    _id: ObjectId('66513f1010b1f37c727900fa'),
+    mentor_name: 'surya',
+    mentees_count: 20
+  }
